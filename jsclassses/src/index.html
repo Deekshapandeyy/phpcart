@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Advanced</h1>
+    <!-- classes -->
+    <h1>1. Classes</h1>
+    <form>
+        <label name="ID">ID: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;</label>
+        <input type="text" id="id_new" >
+        <br>
+        <label name="name">Name: &nbsp; &nbsp; &nbsp;</label>
+        <input type="text" id="name_new" >
+        <br>
+        <label name="basic">Basic Sal: </label>
+        <input type="number" id="sal_new">
+        <br>
+        <br>
+        <button class="btn" onclick="addition()">ADD</button>
+    </form>
+    <h3 id="error"></h3>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>TOTAL SALARY</th>
+            <th>ACTION</th>
+        </thead>
+        <tbody id="details">
+        </tbody>
+    </table>
+    <hr>
+    <!-- array of objects -->
+    <h1>2. Array of Objects</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Order Index</th>
+                <th>Colour ID</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+        </tbody>
+    </table>
+    <button class="btn" onclick="deletion()">Delete205202714</button>
+    <button class="btn" onclick="updation()">Update193352341</button>
+    <select name="id" id="id_object" onclick="dropdown()">
+    </select>
+    <hr>
+    <!-- promise -->
+    <h1>3. Promises</h1>
+    <form>
+        <input type="number" id="first_num">
+        <input type="number" id="second_num" onkeyup="promise()">
+    </form>
+    <hr>
+    <h1>4. 'this' keyword</h1>
+    <table id="tictac">
+        <tbody id="tictacbody">
+            <tr>
+                <td id="1" onclick="tictac(this)"></td>
+                <td id="2" onclick="tictac(this)"></td>
+                <td id="3" onclick="tictac(this)"></td>
+            </tr>
+            <tr>
+                <td id="4" onclick="tictac(this)"></td>
+                <td id="5" onclick="tictac(this)"></td>
+                <td id="6" onclick="tictac(this)"></td>
+            </tr>
+            <tr>
+                <td id="7" onclick="tictac(this)"></td>
+                <td id="8" onclick="tictac(this)"></td>
+                <td id="9" onclick="tictac(this)"></td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 id="error_text"></h3>
+   <hr>
+   <!-- async,await & fetch -->
+   <h1>5. Async, await and fetch()</h1>
+   <table>
+    <thead>
+    </thead>
+    <tbody id="task_async">
+    </tbody>
+   </table>
+   <hr>
+   <hr>
+   <!-- arraow function -->
+   <h1>6. Arrow Function</h1>
+   <label name="start">START YEAR:</label>
+   <input type="number" id="startyear">
+   <br>
+   <label name="end" >END YEAR: &nbsp; &nbsp;</label>
+   <input type="number" id="endyear">
+   <br>
+   <button class="btn" onclick="datechecker()">Click Me</button>
+   <div id="dates"></div>
+   <br>
+   <hr>
+   <hr>
+   <!-- importing data -->
+   <h1>7. Modules</h1>
+   <table >
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SALARY</th>
+        </tr>
+    </thead>
+    <tbody id="importing">
+    </tbody>
+   </table>
+   <hr>
+   <!-- dom hitting -->
+   <h1>8. DOM hitting</h1>
+   <div id="dom" >
+    <h1 name="name">Heading 1</h1>
+    <h1 class="bingo">Heading 1</h1>
+    <h1 id="id" name="id">Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+   </div>
+   <button type="Submit" value="bingo" onclick="heading_bingo()">Bingo</button>
+   <hr>
+   <!-- regular expression -->
+   <h1>9.Regular Expression</h1>
+   <h3 id="regex"></h3>
+</body>
+<script src="./js/script.js"  ></script>
+</html>
+
